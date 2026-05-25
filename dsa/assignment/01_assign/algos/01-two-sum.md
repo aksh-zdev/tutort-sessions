@@ -1,8 +1,6 @@
 # 1. Two Sum
 
-
 **LeetCode 1** | Array | Hash Map
-
 
 ## Problem
 
@@ -10,12 +8,11 @@ Given an array `nums` and a target integer, return the indices of the two number
 
 ---
 
-
 ## Approach 1 — Brute Force
 
 **Idea:** Check every pair (i, j) and see if they sum to target.
 
-```
+```pseudocode
 for i from 0 to n-1:
     for j from i+1 to n-1:
         if nums[i] + nums[j] == target:
@@ -26,14 +23,13 @@ for i from 0 to n-1:
 - **Space:** O(1)
 - **Why it's slow:** Two nested loops check all pairs.
 
-
 ---
 
 ## Approach 2 — Optimized (Hash Map)
 
 **Idea:** For each number, compute its complement (`target - num`) and check if it already exists in a hash map. Store each number's index as you go.
 
-```
+```pseudocode
 map = {}
 for i from 0 to n-1:
     complement = target - nums[i]
@@ -45,7 +41,6 @@ for i from 0 to n-1:
 - **Time:** O(n) — single pass
 - **Space:** O(n) — hash map stores up to n entries
 - **Why it's fast:** Hash map lookup is O(1), so each element is processed once.
-
 
 ---
 

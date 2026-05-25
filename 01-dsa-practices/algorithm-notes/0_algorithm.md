@@ -2,6 +2,9 @@
 
 Writing an algorithm is about expressing a solution clearly, step by step, in a way that can later be converted into code.
 
+An algorithm is a set of steps or rules used to perform a task or solve a problem.
+A sequence of instructions followed step-by-step to achieve a goal.
+
 "Think of it as a bridge between problem understanding and coding."
 
 ## Standard Algorithm Template
